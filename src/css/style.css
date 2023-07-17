@@ -1,6 +1,33 @@
-.container{
+body{
+    height: 100vh;
     display: flex;
-    background: var(--branco);
+    background-color: hsl(234, 29%, 20%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#newlestter{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 30px 10px;
+}
+
+#newlestter .titulo{
+    font-size: 45px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
