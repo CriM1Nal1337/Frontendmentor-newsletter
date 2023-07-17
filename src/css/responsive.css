@@ -1,0 +1,40 @@
+@media (max-width: 950px) {
+    #newlestter{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    #newlestter .titulo {
+        font-size: 34px;
+    }
+
+    .container{
+        justify-content: start;
+    }
+
+    .newlestter-text{
+        order: 0;
+        width: 80%;
+    }
+
+    .illustration{
+        order: -1;
+        height: 30%;
+        width: 100%;
+    }
+
+    .illustration img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px){
+    .newlestter-text{
+        width: 100%;
+    }
+}
