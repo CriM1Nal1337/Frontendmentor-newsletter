@@ -45,20 +45,26 @@
             </li>
           </ul>
 
-          <div>
-            <p class="email-text">Email address</p>
-            <input
-              type="email"
-              name="newlestter"
-              id="email"
-              placeholder="email@company.com"
-              required
-            />
-          </div>
+          <form class="newsletter-form">
+            <div class="text-email-error">
+              <p class="email-text">Email address</p>
+              <span id="email-validation" class="hide error">Valid email required</span>
+            </div>
+            <div class="email-box">
+              <input
+                class="email"
+                type="email"
+                name="newlestter"
+                id="email"
+                placeholder="email@company.com"
+                required
+              />
 
-          <button class="btn" id="btn-subscribe">
-            <p>Subscribe to monthly newsletter</p>
-          </button>
+              <button type="submit" class="btn" id="btn-subscribe">
+                <p>Subscribe to monthly newsletter</p>
+              </button>
+            </div>
+          </form>
         </div>
         <div class="illustration">
           <picture>
@@ -86,7 +92,7 @@
           <strong>ash@loremcompany.com.</strong> Please open it and click the
           button inside to confirm your subscription.
         </p>
-        <button class="btn"><p>Dismiss message</p></button>
+        <button class="btn" id="btn-dismiss"><p>Dismiss message</p></button>
       </div>
     </main>
     <footer class="attribution">
@@ -96,5 +102,7 @@
       >. Coded by
       <a href="https://github.com/CriM1Nal1337">Elton Ferreira Borges</a>
     </footer>
+    
+    <script src="src/js/index.js"></script>
   </body>
 </html>

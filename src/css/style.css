@@ -48,21 +48,38 @@ li {
   gap: 16px;
 }
 
-.email-text {
+.text-email-error {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-text,
+.error {
   font-size: 12px;
   font-weight: 700;
 }
 
-#email {
+.error {
+  color: var(--tomato);
+}
+.email {
   width: 100%;
   height: 55px;
+  border: 1px solid var(--cinza-meio-escuro);
   border-radius: 10px;
-  border: 1px solid var(--cinza-claro);
   padding: 10px;
 }
 
-#email:hover {
+.email:hover {
   cursor: pointer;
+}
+
+.error-border-email {
+  border: 1px solid var(--tomato);
+}
+
+.error-border-email::placeholder {
+  color: var(--tomato);
 }
 
 .btn {
@@ -88,6 +105,12 @@ li {
   box-shadow: rgba(253, 0, 0, 0.523) 0px 14px 28px,
     rgba(247, 209, 19, 0.557) 0px 10px 10px;
   cursor: pointer;
+}
+
+.email-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 #newlestter-success {
